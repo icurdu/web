@@ -1,0 +1,376 @@
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Need body to take full page */
+
+    body {
+      color: #5a5a5a;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url(../img/diagonalines.png);
+      background-size: 100%;
+      background-repeat: vertical;
+      
+    }
+
+    .btn.btn-xlarge {
+      padding: 20px 50px;
+      font-size: 22px;
+      border-radius: 40px;
+      transition: all ease-in-out .175s;
+    }
+
+    .btn.btn-xlarge:hover {
+      border-radius: 0px;
+      transition: all ease-in-out .175s;
+    }
+
+    .btn.btn-xxlarge {
+      padding: 20px 50px;
+      font-size: 30px;
+      background-image: url(../img/mosaico.png);
+      color: #ffffff;
+      font-weight: bold;
+      text-shadow: 2px 5px 6px rgba(0,0,0,2);
+      border-radius: 40px;
+      transition: all ease-in-out .175s;
+
+    }
+
+    .btn.btn-xxlarge:hover{
+      border-radius: 0px;
+      transition: all ease-in-out .175s;            
+    }
+
+    .center-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      padding-top: 130px;
+      margin-top: 50px !important;
+      }
+
+      .white {
+        color: #FFFFFF !important;
+
+      }
+
+     .pull-center {
+      text-align: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 20px;
+     } 
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 25px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+      border-radius: 10px;
+
+
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding-top: 10px; /* Increase vertical padding to match navbar links */
+      padding-left: 40px;
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+      margin-left: 0px;
+
+    }
+
+    .navbar .nav {
+      position: absoulte;
+      left: 0;
+      display: block;
+      float: right;
+      margin: 10px 20px 0 0;
+}
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      clear: both;
+      padding: 25px 40px 20px 30px;
+      font-size: 30px;
+      font-weight: 100;
+      transition: all ease-in-out .1s;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+    .dropdown-menu > li > a {
+      transition: all ease-in-out .2s;
+    }
+
+
+    .dropdown-menu {
+      font-size: 18px;
+      font-weight: lighter;
+      border-radius: 8px;
+      padding: 20px 0;
+      min-width: 200px;
+      line-height: ;
+
+    }
+
+    .dropdown-menu > li > a:hover {
+      background-image: url(../img/mosaico.png);
+      background-repeat: repeat-x;
+      background-position: 50px ;
+      background-color: white;
+      font-weight: bolder;
+      padding: 4px 20px;
+    }
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+      height: 100%;
+      width: 100%;
+    }
+
+    .carousel-inner {
+      height: 100%;
+
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+
+    }
+
+    .carousel-control {
+      clear: both;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      width: 50px;
+      height: 50px;
+      margin: 0;
+      padding: 30px;
+      -webkit-border-radius: 70px;
+      -moz-border-radius: 70px;
+          border-radius: 70px;
+          z-index: 10
+      transition: all ease-in-out .1s;
+   }
+
+  .carousel-control:hover {
+    padding: 35px;
+    margin: -5px;
+    transition: all ease-in-out .1s;
+  }
+
+    .carousel .item {
+      height: 100% ;
+      width: 100% ;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: auto;
+      width: 100%;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: black;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption h1 {
+      font-size: 5.0em;
+    }
+    .carousel-caption p.lead {
+      font-size: 1.8em;
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 100px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 60px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+    .final-image {
+      padding-bottom:100px;
+      padding-top: 100px;
+    }
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin-left: -20px 0;
+      }
+
+      .carousel .item {
+        height: 100%;
+        width: 100%;
+      }
+      .carousel img {
+        height: auto;
+        width: auto;     
+       }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 100%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+        height: 100%;
+        width: 100%;
+      }
+      .carousel .container {
+        height: 100%;
+        width: 100%;
+      }
+      .carousel .item {
+        height: 100%;
+      width: 100%;
+      }
+      .carousel img {
+        height: 100%;
+      width: 100%;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }

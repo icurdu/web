@@ -1,5 +1,5 @@
 /* ============================================================
- * bootstrap-dropdown.js v2.3.2
+ * bootstrap-dropdown.js v2.3.0
  * http://twitter.github.com/bootstrap/javascript.html#dropdowns
  * ============================================================
  * Copyright 2012 Twitter, Inc.
@@ -30,7 +30,8 @@
     , Dropdown = function (element) {
         var $el = $(element).on('click.dropdown.data-api', this.toggle)
         $('html').on('click.dropdown.data-api', function () {
-          $el.parent().removeClass('open')
+          $(toggle).next('ul').slideToggle();
+          $el.parent().removeClass('opened')
         })
       }
 
@@ -47,16 +48,13 @@
 
       $parent = getParent($this)
 
-      isActive = $parent.hasClass('open')
+      isActive = $parent.hasClass('opened')
 
       clearMenus()
 
       if (!isActive) {
-        if ('ontouchstart' in document.documentElement) {
-          // if mobile we we use a backdrop because click events don't delegate
-          $('<div class="dropdown-backdrop"/>').insertBefore($(this)).on('click', clearMenus)
-        }
-        $parent.toggleClass('open')
+        $(this).next('ul').slideToggle();
+        $parent.toggleClass('opened')
       }
 
       $this.focus()
@@ -83,7 +81,7 @@
 
       $parent = getParent($this)
 
-      isActive = $parent.hasClass('open')
+      isActive = $parent.hasClass('opened')
 
       if (!isActive || (isActive && e.keyCode == 27)) {
         if (e.which == 27) $parent.find(toggle).focus()
@@ -108,9 +106,11 @@
   }
 
   function clearMenus() {
-    $('.dropdown-backdrop').remove()
     $(toggle).each(function () {
-      getParent($(this)).removeClass('open')
+      if (getParent($(this)).hasClass('opened')) {
+        $(this).next('ul').slideToggle();
+        getParent($(this)).removeClass('opened');
+      }
     })
   }
 
@@ -163,7 +163,8 @@
   $(document)
     .on('click.dropdown.data-api', clearMenus)
     .on('click.dropdown.data-api', '.dropdown form', function (e) { e.stopPropagation() })
+    .on('.dropdown-menu', function (e) { e.stopPropagation() })
     .on('click.dropdown.data-api'  , toggle, Dropdown.prototype.toggle)
     .on('keydown.dropdown.data-api', toggle + ', [role=menu]' , Dropdown.prototype.keydown)
 
-}(window.jQuery);
+}(window.jQuery); 
