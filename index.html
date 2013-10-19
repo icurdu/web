@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -27,7 +27,7 @@
 
   <body>
 
-    <!-- NAVBAR
+     <!-- NAVBAR
     ================================================== -->
     <div class="navbar-wrapper">
       <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
@@ -46,7 +46,19 @@
             <div class="nav-collapse collapse">
               <ul class="nav">
                 <li><a href="contact.html">CONTACTO</a></li>
-                <li><a href="proyectos.html">PROYECTOS</a></li>
+                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">PROYECTOS<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="proyectos.html">Todo</a></li>
+                    <li class="divider"></li>
+                    <li><a href="identidades.html">Identidad</a></li>
+                    <li><a href="comunicacion.html">Comunicación</a></li>
+                    <li><a href="editorial.html">Editorial</a></li>
+                    <li><a href="web.html">Web</a></li>
+                    <li class="divider"></li>
+                    <li><a href="otros.html">Por Diversión</a></li>
+                    <li><a href="fotografia.html">Fotografía</a></li>
                   </ul>
                 </li>
               </ul>
@@ -57,56 +69,206 @@
       </div> <!-- /.container -->
     </div><!-- /.navbar-wrapper -->
 
+      
+      <!-- BREADCRUM NAVIGATION INFO -->
+    <div class="container marketing">
+      <ul class="breadcrumb">
+       <li class="active">Proyectos</li>
+     </ul>
 
-
-    <!-- Carousel
+      
+<!--       <div class="hero-unit">     
+  <h1 class="white">Hey, hey, hey!</h1>
+  <h2 class="white">Bienvenido a mi web personal. Aquí encontrarás todos mis proyectos, así que... ¿Porque no le echas un vistazo?</h2>
+  <p>
+    <a class="btn btn-primary btn-large">
+      Contactame
+    </a>
+  </p>
+</div> -->
+      </div>
+        <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
-          <img src="assets/img/index-slides/slide1.png" alt="">
-          <div class="container">
-          </div>
-        </div>
-        <div class="item">
-          <img src="assets/img/index-slides/slide2.png" alt="">
-          <div class="container">
-            <div class="carousel-caption pull-right text-right" >
-              <h1 style="color:black;">Como el agua.</h1>
-              <p class="lead" style="color:black;">Mis diseños se adaptan a las necesidades de tu proyecto. Adaptabilidad, frescura y versatilidad. <br><h2>Cada uno de mis diseños están hechos por y para ti.</h2>
-              </p>
-              <a class="btn btn-xlarge btn-primary" href="proyectos.html">¡Compruébalo tu mismo!</a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="assets/img/index-slides/slide3.png" alt="">
+          <img src="assets/img/burkar.png">
           <div class="container">
             <div class="carousel-caption">
-              <h1>El tiempo es oro</h1>
-              <p class="lead">Decidimos el precio y la fecha. ¿Cuanto estas dispuesto a pagar? ¿Cuando es posible tenerlo? El precio justo, en el tiempo justo. 
-              <br><h2>100% de clientes satisfechos.</h2></p>
-              <a class="btn btn-xlarge btn-primary" href="contact.html">¿Sigues esperando? Contacta conmigo</a>
+              <h1>Hey, hey, hey!</h1>
+              <p class="lead">Bienvenido a mi web personal. Aquí encontrarás todos mis proyectos, así que... ¿Por que no le echas un vistazo?</p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="assets/img/index-slides/slide4.png" alt="">
+          <img src="assets/img/clouds.png" alt="">
           <div class="container">
-            <div class="carousel-caption pull-right text-right">
-              <h1>¡En la diana!</h1>
-              <p class="lead">Un disparo certero. El mensaje llega a las personas indicadas en el sitio correcto.
-              <br><h2>10 de cada 10 de mis diseños alcanzan la comunicación deseada.</h2> </p>
-              <a class="btn btn-xlarge btn-primary" href="proyetos.html">A ver, a ver...</a>
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/img/hexagon.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
             </div>
           </div>
         </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
     </div><!-- /.carousel -->
 
-    <!-- Le javascript
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      
+      <!-- FILA 1 -->
+
+      <div class="row">
+        
+        <!-- BCN -->
+        <div class="span4">
+          <img class="img-square" src="assets/img/otros/otros-featurette3.png">
+          <h2>Diseño de camiseta.<br><small>BCN.</small></h2>
+          <p>Proyecto personal de creción de un diseño para estampar en camisetas y venderlas por los alrededores de Barcelona. Llevo tiempo dandole vueltas a ésto...</p>
+          <p><a class="btn btn-large" href="camiseta-bcn.html">Ver más &raquo;</a></p>
+        </div><!-- /.span4 -->
+        
+        <!-- MOSTRA D'ART JOVE -->
+        <div class="span4">
+          <img class="img-square" src="assets/img/mostra/mostra-featurette3.png">
+          <h2>Cartel Publicitario. <br><small>Mostra d'Art Jove 2013</small></h2>
+          <p>Encargo de "L'espai de Joves de Montgat" en colaboración con el Ayuntamiento de Montgat. Cartel dirigido a un espectro de público amplio que muestra la herramienta principal de muchos artistas: La mano.</p>
+          <p><a class="btn btn-large" href="cartel-art.html">Ver más &raquo;</a></p>
+        </div><!-- /.span4 -->
+        
+        <!-- LIBRO DIDOT -->
+        <div class="span4">
+          <img class="img-square" src="assets/img/didot/didot-featurette1.png">
+          <h2>Libro. <br><small>La tipografia y libro en la Edad Moderna.</small></h2>
+          <p>Proyecto didáctico dónde se expone un contexto histórico-artistico del siglo XVIII y un estudio exhaustivo del ámbito de la tipografia. La presentación del libro sigue las pautas marcadas por la época, consiguiendo llegar a la esencia del clasicismo.</p>
+          <p><a class="btn btn-large" href="libro-didot.html">Ver más &raquo;</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+      
+
+      <!-- FILA 2 -->
+
+      <div class="row">
+        
+        <!-- ALCAT TEST -->
+        <div class="span4">
+          <img class="img-square" src="assets/img/alcat/alcat-featurette2.png">
+          <h2>WEB.<br><small>Alcat Test</small></h2>
+          <p>Encargo de página web realizada en Wordpress con funciones principales de FrontEnd. Customización de plantilla, área privada, formulario y diseño sanitario.</p>
+          <p><a class="btn btn-large" href="alcat-web.html">Ver más &raquo;</a></p>
+        </div><!-- /.span4 -->
+        
+        <!-- JUSTICIA I PAU -->
+        <div class="span4">
+          <img class="img-square" src="assets/img/jp/jp1.png">
+          <h2>Rediseño de logotipo.<br><small>Justícia i Pau de Barcelona.</small></h2>
+          <p>A través de un proyecto escolar, se trata el rediseño de la identidad gráfica de la asociación Justícia i Pau de Barcelona, atendiendo a los especificaciones dadas por el cliente. Se elabora el logotipo, así como las aplicaciones dónde puede aparecer y su manual corporativo.</p>
+          <p><a class="btn btn-large" href="justicia-i-pau.html">Ver más &raquo;</a></p>
+        </div><!-- /.span4 -->
+        
+        <!-- CARTELL MALAGA -->
+        <div class="span4">
+          <img class="img-square" src="assets/img/malaga/malaga-featurette3.png">
+          <h2>Cartel Publicitario.<br><small>17 Festival de Cine Español de Málaga.</small></h2>
+          <p>Propuesta para el concurso anual de uno de los más importantes festivales de cine nacional. Se unen los conceptos del cine y la localidad donde se celebra, Málaga, para lograr un cartel potente gráficamente y funcional en el mensaje.</p>
+          <p><a class="btn btn-large" href="cartel-malaga.html">Ver más &raquo;</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+
+      <!-- FILA 3 -->
+
+      <div class="row">
+        
+        <!-- MANUAL TIPOGRAFIA -->
+        <div class="span4">
+          <img class="img-square" src="assets/img/manual/manual-featurette3.png">
+          <h2>Revista.<br><small>Manual de composición tipográfica.</small></h2>
+          <p>¿Que mejor manera de aprender sobre composición tipográfica que componiendo una revista? A través de una profunda documentación, se pone en práctica en un proyecto de libre contenido y descarga gratuita.</p>
+          <p><a class="btn btn-large" href="manual-tipografia.html">Ver más &raquo;</a></p>
+        </div><!-- /.span4 -->
+        
+        <!-- MONTGAT CITY -->
+        <div class="span4">
+          <img class="img-square" src="assets/img/otros/otros-featurette2.png">
+          <h2>Ilustraciones.<br><small>Village Hidden Expressions.</small></h2>
+          <p>Protagonista: Montgat, mi pueblo. En él hay cosas que puedes ver si te fijas, si paras atención. A través de sus sitios más icónicos se crean unas composiciones que dificilmente te dejan igual. Quizás te gustan, quizás no. Pero tu ojo ya está ahí.</p>
+          <p><a class="btn btn-large" href="montgat-city.html">Ver más &raquo;</a></p>
+        </div><!-- /.span4 -->
+        
+        <!-- CAMISETA VOLCOM -->
+        <div class="span4">
+          <img class="img-square" src="assets/img/otros/otros-featurette1.png">
+          <h2>Diseño de camiseta.<br><small>Volcom Gallery.</small></h2>
+          <p>En colaboración de un gran amigo mío, Albert Aixalá, se crea el diseño de las camisetas que posteriormente la marca comercializará por europa. </p>
+          <p><a class="btn btn-large" href="camiseta-volcom.html">Ver más &raquo;</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+
+      <!-- FILA 4 -->
+
+      <div class="row">
+        
+        <!-- CAN PELAT -->
+        <!-- <div class="span4">
+          <img class="img-square" src="assets/img/manual/manual-featurette3.png">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+          <p><a class="btn btn-large" href="#">Ver más &raquo;</a></p>
+        </div> --><!-- /.span4 -->
+        
+        <!-- LA GUINGUETA -->
+        <!-- <div class="span4">
+          <img class="img-square" src="assets/img/otros/otros-featurette2.png">
+          <h2>Heading</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-large" href="#">Ver más &raquo;</a></p>
+        </div> --><!-- /.span4 -->
+        
+        <!-- FOTOGRAFIA -->
+        <!-- <div class="span4">
+          <img class="img-square" src="assets/img/otros/volcom-featurette3.png">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-large" href="#">Ver más &raquo;</a></p>
+        </div> --><!-- /.span4 -->
+      </div><!-- /.row -->
+
+        
+            
+            <!-- FOOTER -->
+        <!-- INFO -->
+        <hr class="footer-divider">
+        <footer>
+          <p>&copy; 2013 Iban Curdu <br> <i class="icon-user"></i>.<b> (+34) 659 571 830</b> &middot; </p>
+        </footer>
+        <hr class="footer-divider">
+
+    </div><!-- /.container -->
+
+          <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
@@ -138,7 +300,7 @@
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();q
+      })();
     </script>
 
   </body>
