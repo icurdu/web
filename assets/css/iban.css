@@ -466,6 +466,14 @@
         
         }
 
+     .pager .previous a {
+        font-size: 1em;
+      }
+
+      .pager .next a {
+        font-size: 1em;
+      }
+
       .carousel-caption h1 {
         font-size: 4.0em;
       }
