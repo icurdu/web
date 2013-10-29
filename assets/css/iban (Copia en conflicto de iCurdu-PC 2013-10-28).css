@@ -25,16 +25,16 @@
       background-image: linear-gradient(to bottom, #F7941E, #F15A29);
 
         font-weight: 300;
+        text-decoration: none;
         background-color: rgba(219,87,5,1);
         padding: 5px 10px 5px 10px;
         -webkit-border-radius: 8px;
         -moz-border-radius: 8px;
         border-radius: 15px;
-        -webkit-box-shadow: 0px 5px 0px #FBB040, 0px 6px 15px rgba(0,0,0,.7);
-        -moz-box-shadow: 0px 5px 0px #FBB040, 0px 6px 15px rgba(0,0,0,.7);
-        box-shadow: 0px 5px 0px #FBB040, 0px 6px 15px rgba(0,0,0,.7);
+        -webkit-box-shadow: 0px 5px 0px #FBB040, 0px 9px 15px rgba(0,0,0,.7);
+        -moz-box-shadow: 0px 5px 0px #FBB040, 0px 9px 15px rgba(0,0,0,.7);
+        box-shadow: 0px 5px 0px #FBB040, 0px 9px 15px rgba(0,0,0,.7);
         border-color: rgba(219,87,5,1);
-
 
         font-style: italic;
         font-weight: bold;
@@ -62,14 +62,11 @@
     }
 
     .pager li > a:hover{
-      
-      background-image: -moz-linear-gradient(top, #F7941E, #EF4136);
-      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#F7941E), to(#EF4136));
-      background-image: -webkit-linear-gradient(top, #F7941E, #EF4136);
-      background-image: -o-linear-gradient(top, #F7941E, #EF4136);
-      background-image: linear-gradient(to bottom, #F7941E, #EF4136);
-
-      transition: all .1s  ease-in-out;
+      background-image: -moz-linear-gradient(top, #F7941E, #F15A29);
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#F7941E), to(#F15A29));
+      background-image: -webkit-linear-gradient(top, #F7941E, #F15A29);
+      background-image: -o-linear-gradient(top, #F7941E, #F15A29);
+      background-image: linear-gradient(to bottom, #F7941E, #F15A29);
     }
 
     .muted{
@@ -232,7 +229,8 @@
       background-image: -o-linear-gradient(top, #0088cc, #0050CC);
       background-image: linear-gradient(to bottom, #0088cc, #0050CC);
       border-radius: 0px;
-
+      padding-left: 60px;
+      padding-right: 60px;
 
       transition: all ease-in-out .1s;            
     }
@@ -498,7 +496,6 @@
     /* Center align the text within the three columns below the carousel */
     .marketing .span4 {
       text-align: center;
-      padding-bottom: 40px;
     }
     .marketing h2 {
       font-size: 2.5em;
