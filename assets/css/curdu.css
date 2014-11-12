@@ -1,0 +1,173 @@
+body,h1,h2,h3,h4,h5,p,span,a {
+	font-family: 'Roboto' !important;
+}
+
+h2 {
+font-size: 3em;
+color: #222222;
+font-family: 'Dosis';
+font-weight: 900;
+margin: 35px 0 25px 0;
+text-align: center;
+text-transform: uppercase;
+border-bottom: 1px solid #CCC;
+padding-bottom: 30px;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 4em;
+	color: #333;
+}
+
+#header_outer {
+background: #ffffff;
+padding: 10px 0px;
+}
+
+.top_cont_inner {
+background: url(../img/bg-home.png) no-repeat right center;
+}
+
+.nav {
+margin-bottom: 0;
+padding-left: 0;
+list-style: none;
+padding-top: 10px;
+}
+
+.nav ul li a {
+font-weight: 900;
+}
+
+#work_outer {
+background: rgba(8, 8, 8, 1);
+ padding: 0px 0px 0px 0px; 
+position: relative;
+}
+
+.service_block h3 {
+font-family: 'Dosis';
+font-weight: 900;
+font-size: 1.5em;
+color: #111111;
+margin: 35px 0 18px;
+}
+
+.service-list-col2 > h1 {
+	font-size: 4em;
+	color: #CCC;
+	font-weight: 900;
+}
+
+.service-list-col2 > p {
+	color: #CCC;
+}
+
+a.contact_btn {
+	margin-bottom: 70px;
+	left:0;
+	background: #1D7196;
+}
+
+.work_bottom {
+/* padding: 20px 0 0 60px; */
+padding: 0px;
+}
+
+#Portfolio {
+padding: 0px 0px 100px 0px ;
+}
+
+.project-name {
+	margin: 0 10px;
+}
+
+.project-name > b {
+	font-size: 2em;
+	margin-top: 0px;
+	font-weight: 900;
+}
+
+.long > b {
+	font-size: 1.5em;
+}
+
+.project-categories {
+	font-weight: 700;
+	color: #000;
+}
+
+.project-overlay:hover {
+background: rgba(255, 255, 255, 0.95);
+}
+
+.footer_section {
+background: rgba(255,255,255,0.6),url(../img/bg-contact.jpg) repeat center top;
+/*background: #fff;*/
+
+}
+
+.contact-info-box p, .contact_block span, 
+.contact_block span a, .contact-info-box h3,
+.contact_section h2   {
+	color: #222222;
+
+}
+
+.social-link {
+	margin: 0px;
+padding: 35px 0;
+display: block;
+overflow: hidden;
+list-style: none;
+/*right: 0;
+position: absolute;*/
+}
+
+.contact_big h3, .contact_big h4 {
+	font-size: 3.5em;
+	font-weight: 900;
+	text-transform: none;
+} 
+
+.contact_big {
+	padding-left: 30px;
+}
+
+.footer_bottom {
+border-top: 1px solid #CCC;
+color: #222222;
+}
+
+
+
+@media only screen and (max-width: 767px){
+
+.res-nav_click {
+display: block;
+font-size: 25px;
+left: 0;
+position: absolute;
+top: 0;
+}
+
+.nav {
+top:30px;
+}
+
+.nav ul li {
+border-bottom: 1px solid #CCC;
+display: block;
+float: none;
+width: 100%;
+margin: 0px;
+text-align: left;
+text-indent: 20px; 
+}
+
+.nav ul li:last-child {
+margin: 0 0 0 0px;
+}
+
+}
